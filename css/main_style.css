@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* fffeee aaaeee eee */
+body {
+    /* 可视化高度(自适应) */
+    min-height: 110vh;
+    align-items: center;
+    background: linear-gradient(0deg, #fffeee 40%, #aaaeee 90%);
+}
+
+#bg {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+a:hover {
+    color: bisque;
+}
+
+header {
+    z-index: 1;
+    position: fixed;
+    border-radius: 10px;
+    width: 1220px;
+    line-height: 50px;
+    height: 50px;
+    background-color: rgba(170, 174, 238, 0.8);
+    color: #fffeee;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: pink;
+    cursor: pointer;
+    margin: 0 10px 0;
+}
+
+header ul {
+    margin-top: -50px;
+    margin-left: 150px;
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header ul li a {
+    color: #fffeee;
+    text-decoration: none;
+}
+
+header div {
+    float: right;
+    margin-top: -50px;
+}
+
+header div a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fffeee;
+}
+
+main {
+    position: relative;
+    width: 1220px;
+    top: 0px;
+}
+
+.carouseBox {
+    width: 1220px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+}
+
+.carouseBox img {
+    cursor: pointer;
+    margin-top: 50px;
+    width: 1220px;
+    height: 400px;
+    position: absolute;
+    display: none;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.carouseBox img:first-child {
+    display: block;
+}
+
+.carouseBoxList {
+    position: absolute;
+    right: 580px;
+    bottom: 0px;
+}
+
+.carouseBoxList li {
+    cursor: pointer;
+    float: left;
+    width: 6px;
+    height: 6px;
+    margin: 0px 5px;
+    list-style: none;
+    border-radius: 50%;
+    border: 1px solid #b0b0b0;
+}
+
+.carouseBoxList .one {
+    background-color: #fffeee;
+}
+
+.topRight {
+    width: 280px;
+    float: right;
+    position: relative;
+}
+
+.topRight a {
+    margin-left: 20px;
+    width: 50px;
+    display: inline-block;
+}
+
+.issue {
+    margin: 0 auto;
+}
+
+.carlist {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 12px;
+    position: absolute;
+    line-height: 100px;
+    color: #b0b0b0;
+    box-shadow: 0 2px 2px #b0b0b0;
+    text-align: center;
+    display: none;
+}
+
+#personal {
+    width: 80px;
+    margin-left: 100px;
+    display: none;
+}
+
+.inputbox {
+    margin-right: 400px;
+    height: 30px;
+}
+
+.inputbox input {
+    outline: none;
+    border: none;
+    width: 170px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+.inputbox img {
+    float: right;
+    margin-top: 10px;
+    margin-left: 0px;
+    border: 1px solid #666;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 0 10px 10px 0;
+}
+.prev{
+    background-image: url(../img/left.png);
+}
+.next{
+    background-image: url(../img/right.png);
+}
+.prev,
+.next {
+    background-repeat: round;
+    width: 50px;
+    height:50px;
+    position: absolute;
+    top: 50%;
+    background-color: #a1a0a046;
+    color: white;
+    padding: 8px 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.prev:hover,
+.next:hover{
+    background-color: #a1a0a0;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+#container {
+    position: absolute;
+    margin-top: 60px;
+}
+
+#container div {
+    display: inline-block;
+}
+
+#left {
+    width: 240px;
+    height: 480px;
+    position: relative;
+    float: left;
+}
+
+#leftUl li:hover {
+    background-image: linear-gradient(135deg, rgba(194, 255, 216, 0.8) 50%, rgba(170, 174, 238, 0.8)100%);
+    color: #725e10a1;
+}
+
+#left li {
+    cursor: pointer;
+    background-color: rgba(173, 216, 230, 0.479);
+    width: 100%;
+    height: 100%;
+    line-height: 90px;
+    height: 90px;
+    list-style: none;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-size: 20px;
+    color: #fffeee;
+    margin: 10px 0;
+}
+
+#left a {
+    color: #666;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 80px;
+}
+
+#left p {
+    color: #666;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#leftUl img {
+    float: right;
+    margin-top: 25px;
+    width: 50px;
+    height: 50px;
+    margin-right: 0px;
+    z-index: -1;
+}
+
+.containerList {
+    width: 100%;
+    display: none !important;
+    position: relative;
+    top: -510px;
+    margin-left: 242px;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.containerListCon {
+    width: 500px;
+    position: absolute;
+    border-radius: 10px 10px;
+    margin: 0px auto;
+    padding-top: 10px;
+}
+
+.containerListCon a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+.containerDiv {
+    width: 100%;
+    height: 50px;
+}
+
+.containerData {
+    background-image: linear-gradient(135deg, rgba(194, 255, 216, 0.8) 50%, rgba(170, 174, 238, 0.8)100%);
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 3;
+}
+
+.containerData:hover {
+    background-image: linear-gradient(135deg, rgba(170, 174, 238, 0.8)50%, rgba(194, 255, 216, 0.8) 100%);
+}
+
+.containerData a {
+    color: #666;
+
+    padding: 8px 12px;
+    display: block;
+    text-decoration: none;
+}
+
+#center {
+    height: 500px;
+    width: 610px;
+    margin: 0 10px;
+    margin-top: 10px;
+    background-color: transparent;
+}
+
+
+.navlist {
+    width: 610px;
+    height: 500px;
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    border-top: 1px solid #b0b0b0;
+    z-index: 1;
+}
+
+.navlistcon {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    margin: 0px auto;
+}
+
+.tsdiv {
+    display: block;
+    width: 200px;
+    height: 180px;
+    border-right: 1px solid #b0b0b0;
+    float: left;
+    margin: 25px 0px;
+
+}
+
+.navlistcon img {
+    cursor: pointer;
+    width: 80%;
+    height: 110%;
+    margin-left: 10%;
+    box-shadow: 2px 2px 2px #b0b0b0;
+}
+
+.navlistcon img:hover {
+    box-shadow: 3px 3px 3px #816c6c;
+}
+
+.navlist div:nth-child(3n) {
+    border: none;
+}
+
+.tsname {
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+.navlistcon p {
+    color: #666;
+}
+
+.navlistcon p:hover {
+    color: #333;
+}
+
+#right {
+    width: 350px;
+    height: 500px;
+    float: right;
+    margin-top: 10px;
+    background-color: f;
+}
+
+
+/* 侧边排行榜样式 */
+.sidebar {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.sidebar h2 {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+    color: #666;
+    background-color: rgba(170, 174, 238, 0.8);
+}
+
+.sidebar h2:hover {
+    background-image: linear-gradient(135deg, rgba(170, 174, 238, 0.8)50%, rgba(194, 255, 216, 0.8) 100%);
+}
+
+.rankings {
+    list-style-type: none;
+    margin: 0;
+}
+
+.rankings li {
+    cursor: pointer;
+    color: #666;
+    height: 70px;
+    line-height: 70px;
+    padding-left: 20px;
+    width: 310px;
+    border-radius: 10px;
+    padding-right: 20px;
+    margin-top: 15px;
+    font-size: 20px;
+    background-color: #c3e7e7b0;
+    border-bottom: 1px solid #ddd;
+}
+
+.rankings li:hover {
+    background-image: linear-gradient(135deg, rgba(194, 255, 216, 0.8) 50%, rgba(170, 174, 238, 0.8)100%);
+}
+
+.rankings li:first-child {
+    font-weight: bold;
+    color: rgba(255, 0, 0, 0.632);
+}
+
+.rankings li:first-child span {
+    font-weight: bold;
+    color: rgba(255, 0, 0, 0.632);
+}
+
+.rankings li span {
+    color: #666;
+    font-size: 20px;
+    margin-right: -120px;
+    float: right;
+}
+
+.ce {
+    display: flex;
+}
+
+.ce-sidebar {
+    color: rgba(102, 102, 102, 0.5);
+    background-image: url(../img/me.jpg);
+    background-repeat: round;
+    width: 100px;
+    position: fixed;
+    line-height: 100px;
+    text-align: center;
+    right: 10px;
+    bottom: 10px;
+    height: 100px;
+    padding-bottom: -20px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgba(170, 174, 238, 0.8);
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    width: 1220px;
+    height: 60px;
+    bottom: -580px;
+    position: relative;
+}

@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* 盒子模型 */
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* fffeee aaaeee eee */
+body {
+    /* 可视化高度(自适应) */
+    min-height: 100vh;
+    /* 弹性布局 */
+    display: flex;
+    /* 水平居中(根据浏览器) */
+    justify-content: center;
+    /* 垂直居中(根据浏览器) */
+    align-items: center;
+    background: linear-gradient(200deg, #fffeee, #aaaeee);
+}
+
+#word {
+    width: 500px;
+    float: left;
+    position: absolute;
+    top: 80px;
+}
+
+#word p {
+    font-size: 80px;
+    font-weight: 1000;
+    color: #aaaeee;
+}
+
+/* 进度条 */
+@keyframes login {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 220px;
+    }
+}
+
+#box {
+    margin: 0 auto;
+    width: 500px;
+    height: 100px;
+    display: flex;
+}
+
+#progress {
+    position: relative;
+    width: 550px;
+    height: 30px;
+    border-radius: 10px;
+    background: transparent;
+}
+
+#fillContent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 30px;
+    background: #eee;
+    border-radius: 6px;
+}
+
+b {
+    width: 45px;
+    margin: 0;
+    color: #fffeee;
+    text-align: right;
+    line-height: 35px;
+}
+
+
+/* 登录注册框 */
+.container {
+    width: 400px;
+    display: flex;
+    display: none;
+}
+
+.auth-form {
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.auth-form h2 {
+    margin-bottom: 20px;
+}
+
+.auth-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.auth-form button {
+    height: 40px;
+    width: 100%;
+    background-color: rgba(194, 255, 216, 0.3);
+    border-radius: 10px;
+    border: none;
+}
+
+.auth-form button:hover{
+    background-image: linear-gradient( 135deg, rgba(194, 255, 216, 0.3) 50%, rgba(247, 4, 4, 0.13) 100%);
+}
+.toggle-form {
+    margin-top: 10px;
+}
+
+.toggle-form a {
+    text-decoration: none;
+}
+
+.warning {
+    margin:0 auto;
+    height: 20px;
+    width: 100%;
+    color: red;
+}
+
+#lastWord {
+    width: 300px;
+    height: 300px;
+    float: left;
+    position: absolute;
+    top: 700px;
+}
+
+#lastWord p {
+    font-size: 30px;
+    font-weight: 1000;
+    color: #aaaeee;
+}

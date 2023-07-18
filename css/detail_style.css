@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+#con {
+    width: 1220px;
+    height: 400px;
+    margin: auto;
+}
+
+#con img {
+    cursor: pointer;
+    margin-top: 50px;
+    width: 1220px;
+    height: 400px;
+    position: relative;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+#con h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+#con hr {
+    width: 1210px;
+    border: #aaaeee 3px solid;
+}
+#videoNameDetail{
+    margin-left: 120px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #666;
+}
+footer {
+    margin: auto;
+}

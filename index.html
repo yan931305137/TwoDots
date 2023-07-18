@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwoDots</title>
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+
+</head>
+
+<body align="center">
+    <div id="word">
+        <p>Two ·</p>
+        <p>Dots</p>
+    </div>
+    <!-- 进度条 -->
+    <div id="box">
+        <div id="progress">
+            <div id="fillContent"></div>
+        </div>
+        <b id="percent">0%</b>
+    </div>
+
+    <!-- 登录注册框 -->
+    <div class="container">
+        <form id="loginForm" class="auth-form">
+            <h2>登 录</h2>
+            <input id="userName" type="text" placeholder="用户名">
+            <input id="password" type="password" placeholder="密 码">
+            <button type="submit" onclick="check()">登 录</button>
+            <p class="toggle-form">还没有账号？<a href="#" onclick="toggleForm()">注 册</a></p>
+            <p class="warning"></p>
+        </form>
+        <form id="registerForm" class="auth-form" style="display:none;">
+            <h2>注 册</h2>
+            <input type="text" placeholder="用户名">
+            <input type="password" placeholder="密 码">
+            <button type="submit">注 册</button>
+            <p class="toggle-form">已有账号？<a href="#" onclick="toggleForm()">登 录</a></p>
+            <p class="warning"></p>
+        </form>
+    </div>
+    <div id="lastWord">
+        <p>点 播 · 点到点的距离</p>
+    </div>
+    <script src="js/index_script.js"></script>
+</body>
+
+</html>
